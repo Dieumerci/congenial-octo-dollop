@@ -1,0 +1,15 @@
+appdirs==1.4.3
+appnope==0.1.0
+attrs==19.3.0
+jedi==0.16.0
+Jinja2==2.11.1
+json5==0.9.4
+psycopg2-binary
+requests==2.23.0
+urllib3==1.25.8
+virtualenv==20.0.17
+wcwidth==0.1.9
+webencodings==0.5.1
+Django==3.0.5
+django-cors-headers==3.2.1
+djangorestframework==3.11.0
