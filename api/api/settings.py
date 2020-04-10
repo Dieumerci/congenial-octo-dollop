@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cognizance.apps.CognizanceConfig',
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
 ]
 
