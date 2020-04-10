@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cognizance.apps.CognizanceConfig',
     'rest_framework',
-    'cors_headers',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
