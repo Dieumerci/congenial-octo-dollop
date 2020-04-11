@@ -1,7 +1,14 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
-
 from rest_framework.authtoken.models import Token
+from cognizance.models import Item
+
+
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = ['id', 'title', 'description']
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
