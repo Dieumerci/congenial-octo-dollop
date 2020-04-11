@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from rest_framework.response import Response
 from django.contrib.auth.models import User
-from cognizance.serializers import UserSerializer, ItemSerializer
-from cognizance.models import Item
+from .serializers import UserSerializer, ItemSerializer
+from .models import Item
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()

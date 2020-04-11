@@ -8,7 +8,7 @@ from rest_framework import  routers
 from cognizance.views import  ItemViewSet
 
 router = routers.DefaultRouter()
-router.register(r'item', ItemViewSet, basename="item")
+router.register(r'', ItemViewSet, basename="item")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
