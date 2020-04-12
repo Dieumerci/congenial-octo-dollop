@@ -5,8 +5,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework.authtoken.views import obtain_auth_token
 from rest_framework import  routers
-from cognizance.views import  ItemViewSet
-
+from cognizance.views import ItemViewSet
 router = routers.DefaultRouter()
 router.register(r'', ItemViewSet, basename="item")
 
