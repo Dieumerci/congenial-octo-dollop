@@ -139,11 +139,16 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'api')
 
-
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+CORS_EXPOSE_HEADERS = (
+    'Access-Control-Allow-Origin: *',
+)
+
 CORS_ORIGIN_WHITELIST = [
+    'http://127.0.0.1:8000',
     'http://localhost:3000',
     'http://localhost:8000',
     'http://localhost:8080',
 ]
+
